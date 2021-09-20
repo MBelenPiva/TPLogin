@@ -7,7 +7,7 @@
     tools:context=".InsertarFragment" >
 
     <EditText
-        android:id="@+id/edtPassword2"
+        android:id="@+id/edtNombre"
         android:layout_width="371dp"
         android:layout_height="51dp"
         android:layout_marginTop="28dp"
@@ -17,7 +17,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
 
     <Button
         android:id="@+id/btnIngresar2"
@@ -37,7 +37,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tvNombre"
+        android:id="@+id/tvUserName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

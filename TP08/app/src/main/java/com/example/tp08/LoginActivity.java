@@ -1,9 +1,6 @@
 package com.example.tp08;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -45,11 +42,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void ObtenerReferencias(){
-        btnIngresar = (Button) layoutRoot.findViewById(R.id.btnIngresar);
+        btnIngresar = (Button) layoutRoot.findViewById(R.id.btnActualizar);
         tvUserName = (TextView) layoutRoot.findViewById(R.id.tvUserName);
-        edtUserName = (EditText) layoutRoot.findViewById(R.id.edtUserName);
-        tvPassword = (TextView) layoutRoot.findViewById(R.id.tvPassword);
-        edtPassword = (EditText) layoutRoot.findViewById(R.id.edtPassword);
+        edtUserName = (EditText) layoutRoot.findViewById(R.id.edtUsername);
+        tvPassword = (TextView) layoutRoot.findViewById(R.id.tvUserName);
+        edtPassword = (EditText) layoutRoot.findViewById(R.id.edtUsername);
     }
 
     private void SetearListeners(){
