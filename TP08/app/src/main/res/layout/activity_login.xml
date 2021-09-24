@@ -7,7 +7,7 @@
     tools:context=".LoginActivity">
 
     <TextView
-        android:id="@+id/tvUserName"
+        android:id="@+id/tvIdNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="UserName"
@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteY="43dp" />
 
     <EditText
-        android:id="@+id/edtUsername"
+        android:id="@+id/edtId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

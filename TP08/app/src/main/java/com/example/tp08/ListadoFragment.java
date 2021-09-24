@@ -7,8 +7,14 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class ListadoFragment extends Fragment {
+    private View layoutRoot = null;
+
+
 
     public ListadoFragment() {
 
@@ -18,6 +24,25 @@ public class ListadoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_listado, container, false);
+        if(layoutRoot == null) {
+            layoutRoot = inflater.inflate(R.layout.fragment_listado, container, false);
+
+            ObtenerReferencias();
+
+            SetearListeners();
+
+        }
+        return layoutRoot;
     }
+
+    private void ObtenerReferencias(){
+
+
+    }
+
+    private void SetearListeners(){
+
+
+    }
+
 }

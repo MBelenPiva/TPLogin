@@ -43,10 +43,10 @@ public class LoginActivity extends AppCompatActivity {
 
     private void ObtenerReferencias(){
         btnIngresar = (Button) layoutRoot.findViewById(R.id.btnActualizar);
-        tvUserName = (TextView) layoutRoot.findViewById(R.id.tvUserName);
-        edtUserName = (EditText) layoutRoot.findViewById(R.id.edtUsername);
-        tvPassword = (TextView) layoutRoot.findViewById(R.id.tvUserName);
-        edtPassword = (EditText) layoutRoot.findViewById(R.id.edtUsername);
+        tvUserName = (TextView) layoutRoot.findViewById(R.id.tvIdNombre);
+        edtUserName = (EditText) layoutRoot.findViewById(R.id.edtId);
+        tvPassword = (TextView) layoutRoot.findViewById(R.id.tvIdNombre);
+        edtPassword = (EditText) layoutRoot.findViewById(R.id.edtId);
     }
 
     private void SetearListeners(){
