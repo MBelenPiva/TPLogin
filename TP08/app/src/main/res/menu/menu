@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_IrAActualizarEliminarFragment"
+        android:title="IR A ACTUALIZAR/ELIMINAR" />
+    <item
+        android:id="@+id/action_IrAListadoFragment"
+        android:title="IR A LISTADO" />
+    <item
+        android:id="@+id/action_IrAInsertarFragment"
+        android:title="IR A INSERTAR " />
+</menu>

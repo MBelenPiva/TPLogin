@@ -79,11 +79,15 @@ public class MainActivity extends AppCompatActivity {
 
         strTitle = item.getTitle().toString(); //  Obtengo el  Titulo  de  MenuItem  presionado.
         switch (item.getItemId()) {
-            case R.id.action_IrAListado:
+            case R.id.action_IrAActualizarEliminarFragment:
+                Toast.makeText(getApplicationContext(), strTitle, Toast.LENGTH_LONG).show();
+                ReemplazarFragments(R.id.main,actualizarEliminarFragment,false);
+                break;
+            case R.id.action_IrAListadoFragment:
                 Toast.makeText(getApplicationContext(), strTitle, Toast.LENGTH_LONG).show();
                 ReemplazarFragments(R.id.main,listadoFragment,false);
                 break;
-            case R.id.action_IrAInsertar:
+            case R.id.action_IrAInsertarFragment:
                 Toast.makeText(getApplicationContext(), strTitle, Toast.LENGTH_LONG).show();
                 ReemplazarFragments(R.id.main,insertarFragment,false);
                 break;
