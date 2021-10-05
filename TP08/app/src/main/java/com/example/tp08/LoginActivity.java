@@ -96,10 +96,10 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         protected String doInBackground(Void... voids) {
             HttpURLConnection conexion = null;
-            URL strAPIUrl;
+            URL strAPIUrl="";
             String strResultado = "";
             try {
-                conexion = (HttpURLConnection) strURL.openConnection();
+                conexion = (HttpURLConnection) strAPIUrl.openConnection();
                 conexion.setRequestMethod("GET");
                 int intStatusCode = conexion.getResponseCode();
                 if (intStatusCode == 200) {
