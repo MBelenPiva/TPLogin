@@ -10,11 +10,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import com.example.tp08.Package.SearchResponse;
 
 public class ListadoFragment extends Fragment {
     private View layoutRoot = null;
-
-
+    ListView listado;
+    SearchResponse marcas = null;
 
     public ListadoFragment() {
 
@@ -35,14 +39,23 @@ public class ListadoFragment extends Fragment {
         return layoutRoot;
     }
 
+    public void mostrarMarcas(){
+        if(marcas != null){
+            listado = marcas;
+        }
+        else{
+            Toast.makeText(getActivity(), "No existe", Toast.LENGTH_LONG);
+        }
+    }
+
     private void ObtenerReferencias(){
-
-
+        listado = (ListView) layoutRoot.findViewById(R.id.listado);
     }
 
     private void SetearListeners(){
 
-
     }
+
+
 
 }
